@@ -3,7 +3,7 @@
 interface=$1
 output_dir=$2
 user=$3
-rotate_interval=60
+rotate_interval=$4
 
 [[ "$(grep -c "$interface" /proc/net/dev)" == "0" ]] && echo "The interface is NOT found!" && exit 255
 [[ ! -d "$output_dir" ]] && echo "The output directory does NOT exist!" && exit 255
