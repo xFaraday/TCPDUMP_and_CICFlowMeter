@@ -1,3 +1,3 @@
 #!/bin/bash
 
-./capture_interface_pcap.sh enp5s0 pcap $(id -nu 1000) 15
+./capture_interface_pcap.sh eth0 pcap $(id -nu 0) 15
